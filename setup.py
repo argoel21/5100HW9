@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='Test',
@@ -7,5 +7,6 @@ setup(
     author='Anjali Goel',
     author_email='arg8qqv@virginia.edu',
     description='my booklover package',
-    packages=['bookloverpackage'],    
+    packages=find_packages(),  # Automatically find packages
+    install_requires=['pandas'],
 )
